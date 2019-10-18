@@ -9,15 +9,15 @@
   and add features later.
 
 ### Documentation
-  - controlModule
+  - **controlModule:**
     A basic implementation of control where "arrowUp" is designated as the keystroke
     to move game avatar. The module will invoke the function which is passed in once
     control criteria has been met. The module is assumed to initial setting is assumed
     to be initialized in another module (in this case the gameModule).
-  - animateModule
+  - **animateModule:**
     This module is to fps lock the game. Certain hardware that can output higher fps causes
     the game to animate faster due to how html5 canvas behaves.
-  - gameModule
+  - **gameModule:**
     This is the primary module. Can initialize with two parameters that can characterize
     how the animation and controls behave. If no parameter then defaults to animating without
     limit and control scheme is just any keypress. Need to be weary of how images load
@@ -25,4 +25,5 @@
 
 ### Notes
   Need to improve documentation, proper game over mechanic, and needs to be stylized a
-  bit more. 
+  bit more. Currently there is a bug on monitors with fast refresh rate. Animation seems
+  to be locked to 60 fps but boundary check failing on monitors with 60+ hz.
