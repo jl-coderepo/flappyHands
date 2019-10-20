@@ -25,5 +25,4 @@
 
 ### Notes
   Need to improve documentation, proper game over mechanic, and needs to be stylized a
-  bit more. Currently there is a bug on monitors with fast refresh rate. Animation seems
-  to be locked to 60 fps but boundary check failing on monitors with 60+ hz.
+  bit more. Need to change gameover state, but for now just resets game's state.
